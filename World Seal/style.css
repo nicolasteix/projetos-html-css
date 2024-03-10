@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap");
+
+:root {
+  --cor-base: #030207;
+  --cor-letra: #fff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Oxygen", sans-serif, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue";
+}
+body {
+  background-color: var(--cor-base);
+  color: var(--cor-letra);
+}
+header{
+    min-width: 350px;
+    margin: auto;
+}
+.Inicio {
+  position: relative;
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom, transparent, var(--cor-base));
+  display: flex; /* Adiciona flexbox */
+  align-items: center; /* Centraliza verticalmente */
+  justify-content: center; /* Centraliza horizontalmente */
+}
+.Inicio video {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  position: absolute;
+  z-index: -10;
+}
+.textoinicial {
+  /*div dos textos*/
+  text-align: center;
+  
+}
+.textoinicial h1 {
+  font-size: 5em;
+  font-weight: 300;
+  margin-bottom: 0.1em;
+}
+.textoinicial p {
+  font-size: 0.9em;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+}
+main{
+    max-width: 1030px;
+    min-width: 350px;
+    padding: 0 40px;
+    margin: auto;
+}
+.introducao {
+  text-align: center;
+}
+.introducao > h2 {
+  font-weight: 300;
+  font-size: 3em;
+  margin: 1.5em auto;
+}
+.introducao > img {
+  width: 100%;
+  max-height: 25em; /*seleciona a altura maxima*/
+  object-fit: cover; /*responsavel por não deixar a imagem deformar, com isso eu meio que corto a imagem*/
+  object-position: top; /*responsavel por dizer qual parte da imagem eu quero que seja mostrada*/
+  box-shadow: 0 1em 2em -0.5em rgba(20, 116, 180, 0.25);
+  border-radius: 0.5em;
+}
+.introducao > p {
+  margin: 1.5em auto;
+  font-size: 1.25em;
+  line-height: 1.7em;
+}
+.habilidades {
+  text-align: center;
+  overflow: hidden;
+}
+.habilidades h2 {
+  font-weight: 300;
+  font-size: 3em;
+  margin: 0.5em auto 1em auto;
+}
+.habilidades img {
+  float: left;
+  width: 20em;
+  height: 26.3em;
+  margin-bottom: 2em;
+  margin-right: 3em;
+  margin-top: 1.5em;
+  border-top-left-radius: 4em;
+  border-top-right-radius: 0.5em;
+  border-bottom-right-radius: 4em;
+  border-bottom-left-radius: 0.5em;
+  box-shadow: 0 1em 2em -0.5em rgba(20, 116, 180, 0.25);
+}
+.habilidades p {
+  margin-top: 1em;
+  font-size: 1.3em;
+  text-align: left;
+  line-height: 1.7em;
+}
+.habitat {
+  text-align: center;
+}
+.habitat h2 {
+  font-weight: 300;
+  font-size: 3em;
+  margin: 1.5em auto 1em auto;
+}
+.habitat img {
+  width: 100%;
+  max-height: 25em; /*seleciona a altura maxima*/
+  object-fit: cover; /*responsavel por não deixar a imagem deformar, com isso eu meio que corto a imagem*/
+  object-position: center; /*responsavel por dizer qual parte da imagem eu quero que seja mostrada*/
+  box-shadow: 0 1em 2em -0.5em rgba(20, 116, 180, 0.25);
+  border-radius: 0.5em;
+}
+.habitat p {
+  margin: 1.5em auto 2.5em auto;
+  font-size: 1.25em;
+  line-height: 1.7em;
+}
+.galery {
+  text-align: center;
+}
+.galery h2 {
+  font-weight: 300;
+  font-size: 3em;
+  margin: 0 auto 1.5em auto;
+}
+.galery p {
+  margin: 3em auto 2em auto;
+  font-size: 1.25em;
+  line-height: 1.7em;
+}
+.galery img {
+  display: inline-block;
+  width: 13em;
+  height: 15em;
+  object-fit: cover;
+  margin-right: 1.5em;
+  border-radius: 0.75em;
+  transform: rotate(-2deg); /*rotaciona 2 graus para a esquerda*/
+}
+.galery img+img{
+    margin-top: 1em;
+}
+.galery img:nth-of-type(odd) {
+  transform: rotate(2deg);
+}
+.curiosidades {
+  text-align: center;
+  overflow: hidden;
+}
+.curiosidades h2 {
+  font-weight: 300;
+  font-size: 3em;
+  margin: 0 auto 1.5em auto;
+}
+.curiosidades img {
+  float: left;
+  width: 20em;
+  height: 26em;
+  object-fit: cover;
+  margin-bottom: 4em;
+  margin-right: 3em;
+  border-top-left-radius: 4em;
+  border-top-right-radius: 0.5em;
+  border-bottom-right-radius: 4em;
+  border-bottom-left-radius: 0.5em;
+  box-shadow: 0 1em 2em -0.5em rgba(20, 116, 180, 0.25);
+}
+.curiosidades p {
+  font-size: 1.25em;
+  line-height: 1.7em;
+  margin-top: -0.5em;
+}
+.curiosidades p + p {
+  margin-top: 1.5em;
+}
+.curiosidades p > a {
+  text-decoration: none;
+  color: rgb(20, 116, 180);
+}
+footer{
+    margin-top: 4em;
+    padding: 2em;
+    text-align: center;
+}
+footer p > a {
+    text-decoration: none;
+    color: rgb(20, 116, 180);
+  }
